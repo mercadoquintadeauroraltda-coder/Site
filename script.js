@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
 
             // Telefone fornecido pelo cliente (MERCADO QUINTA DE AURORA)
-            const numeroWhatsApp = '555599271784'; 
+            const numeroWhatsApp = '5555999271784'; 
 
             const nome = document.getElementById('nome').value;
             const pedido = document.getElementById('pedido').value;
