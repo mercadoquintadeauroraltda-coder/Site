@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado Quinta de Aurora | Mercado & Café em Alegrete</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a href="#" class="logo">Quinta de Aurora<span>.</span></a>
+            
+            <nav class="navbar" id="navbar">
+                <ul class="nav-links">
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Nossa Essência</a></li>
+                    <li><a href="#espacos">Nossos Espaços</a></li>
+                </ul>
+                <a href="#contato" class="btn-contact-header">Faça seu Pedido</a>
+            </nav>
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="hero" id="inicio">
+        <div class="hero-overlay"></div>
+        <div class="container hero-container align-center">
+            <div class="hero-content text-center">
+                <span class="tag-hero">MERCADO & CAFÉ</span>
+                <h1>O frescor do campo com o aroma do melhor café.</h1>
+                <p>Bem-vindo ao Mercado Quinta de Aurora. Um espaço pensado para oferecer produtos selecionados, mercearia fina e momentos inesquecíveis no coração de Alegrete.</p>
+                <div class="hero-buttons center mt-2">
+                    <a href="#espacos" class="btn btn-primary">Conhecer o Menu</a>
+                    <a href="#contato" class="btn btn-outline-white">Encomendas via WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sobre section-padding bg-light" id="sobre">
+        <div class="container grid-1-1 align-center">
+            <div class="sobre-img">
+                <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&q=80&w=800" alt="Ambiente aconchegante de café" style="border-radius: 8px;">
+            </div>
+            <div class="sobre-text">
+                <span class="tag">NOSSA HISTÓRIA</span>
+                <h2>Qualidade, sabor e um bom papo.</h2>
+                <p>O <strong>Mercado Quinta de Aurora</strong> nasceu da paixão por receber bem e oferecer o que há de melhor. Selecionamos nossos produtos com o mesmo cuidado com que preparamos o seu café.</p>
+                <p>Seja para as compras do dia a dia, para encontrar aquele ingrediente especial ou simplesmente para fazer uma pausa à tarde com um doce artesanal, nossa casa é a sua casa.</p>
+                <ul class="check-list mt-2">
+                    <li>Ambiente acolhedor e climatizado.</li>
+                    <li>Atendimento próximo e familiar.</li>
+                    <li>Produtos locais e importados de alta qualidade.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="espacos section-padding" id="espacos">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="tag">O QUE OFERECEMOS</span>
+                <h2>Uma experiência completa</h2>
+                <p>Tudo o que você precisa em um ambiente charmoso e completo.</p>
+            </div>
+            <div class="grid-3">
+                <div class="card-espaco">
+                    <div class="icon-img">☕</div>
+                    <h3>O Café</h3>
+                    <p>Cafés especiais, capuccinos, doces finos, tortas e salgados assados na hora. O refúgio perfeito para o seu final de tarde.</p>
+                </div>
+                <div class="card-espaco">
+                    <div class="icon-img">🥖</div>
+                    <h3>Padaria</h3>
+                    <p>Pães sempre frescos, queijos selecionados e frios fatiados na hora com todo o rigor de higiene que você exige.</p>
+                </div>
+                <div class="card-espaco">
+                    <div class="icon-img">🛒</div>
+                    <h3>Mercado e Adega</h3>
+                    <p>Mercearia completa, produtos orgânicos, vinhos e espumantes para harmonizar com os melhores momentos da sua vida.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-contato section-padding bg-primary" id="contato">
+        <div class="container grid-1-1 align-center">
+            <div class="cta-text">
+                <h2>Faça sua encomenda ou tire dúvidas!</h2>
+                <p>Preparamos cestas de café da manhã, encomendas de tortas e separamos as suas compras do mercado. É só pedir!</p>
+                <br>
+                <p><strong>Acompanhe nossas novidades nas redes sociais:</strong></p>
+                <div class="social-links mt-1">
+                    <a href="https://www.instagram.com/quintadeaurora" target="_blank">Instagram</a>
+                    <a href="#" target="_blank">Facebook</a>
+                </div>
+            </div>
+            <div class="cta-form-box">
+                <h3 style="margin-bottom: 1.5rem; color: var(--primary-dark);">Quer falar conosco?</h3>
+                <form id="form-whatsapp" class="form-padrao">
+                    <div class="input-group">
+                        <label for="nome">Seu Nome</label>
+                        <input type="text" id="nome" placeholder="Como podemos te chamar?" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="pedido">O que você deseja?</label>
+                        <textarea id="pedido" rows="3" placeholder="Ex: Dúvidas sobre pedidos e entregas. . ." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <a href="#" class="logo-footer">Quinta de Aurora<span>.</span></a>
+                <p>O seu mercado e café de confiança em Alegrete. Tradição, sabor e qualidade em cada detalhe.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Contato</h4>
+                <ul>
+                    <li>📞 (55) 9927-1784</li>
+                    <li>📧 larissa_zemolin@hotmail.com</li>
+                    <li>📍 Rua Venâncio Aires, 340</li>
+                    <li>Centro - Alegrete/RS</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Informações Legais</h4>
+                <p><strong>Mercado Quinta de Aurora LTDA</strong><br>
+                CNPJ: 43.271.199/0001-03<br>
+                CEP: 97.541-500</p>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Mercado Quinta de Aurora. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
